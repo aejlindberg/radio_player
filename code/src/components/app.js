@@ -11,7 +11,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://api.sr.se/api/v2/channels?format=json&size=100")
+    fetch("http://api.sr.se/api/v2/channels?format=json&size=4")
       .then((response) => {
         return response.json()
       }).then((json) => {
@@ -23,13 +23,15 @@ class App extends React.Component {
 
   render() {
     if (this.state.radioItems.length > 0) {
-      // return <div>{this.state.radioItems[1].name}</div>
       return (
+        // .filter
         this.state.radioItems.map((station) => {
           return <Station
             name={station.name}
             image={station.image}
-            tagline={station.tagline} />
+            tagline={station.tagline}
+            color={station.color}
+            liveaudioUrl={station.liveaudio.url} />
         })
 
       )
