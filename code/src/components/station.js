@@ -1,17 +1,19 @@
 import React from "react"
 
-class Stations extends React.Component {
+class Station extends React.Component {
 
-render() {
+  render() {
     return (
+
       <div className="station"
-        <h2>{this.props.name}</h2>
+        <h1>{this.props.name}</h1>
         <img src={this.props.image} alt="station"/>
         <p>{this.props.tagline}</p>
+      </div>
 
     )
   }
 
 }
 
-export default Stations
+export default Station

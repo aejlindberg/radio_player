@@ -1,6 +1,5 @@
 import React from "react"
-// import Stations from "./stations.js"
-
+// import Station from "./station.js"
 
 class App extends React.Component {
 
