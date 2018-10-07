@@ -8,24 +8,26 @@ class Station extends React.Component {
         backgroundColor: `#${this.props.color}`
       }
     }
+
     return (
-
-      <div className="station" style={channelColor.backgroundColor}>
-
-        <div className="stationImage">
-          <img src={this.props.image} alt="station logo" />
-        </div>
-        <div className="stationText">
-          <h1>{this.props.name}</h1>
+      <div className="stationWrapper">
+        <div className="station" style={channelColor.backgroundColor}>
+          <div className="stationImage">
+            <img src={this.props.image} alt="station logo" />
+          </div>
+          <div className="stationText">
+            <h1>{this.props.name}</h1>
+          </div>
           <div className="stationTagline">
             <p>{this.props.tagline}</p>
           </div>
-          <audio controls>
-            <source src={this.props.liveaudioUrl} type="audio/mpeg" />
-          </audio>
+          <div className="stationAudio">
+            <audio controls>
+              <source src={this.props.liveaudioUrl} type="audio/mpeg" />
+            </audio>
+          </div>
         </div>
       </div>
-
     )
   }
 

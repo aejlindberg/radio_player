@@ -11,7 +11,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://api.sr.se/api/v2/channels?format=json&size=4")
+    fetch("http://api.sr.se/api/v2/channels?format=json&size=100")
       .then((response) => {
         return response.json()
       }).then((json) => {
@@ -25,6 +25,7 @@ class App extends React.Component {
     if (this.state.radioItems.length > 0) {
       return (
         // .filter
+
         this.state.radioItems.map((station) => {
           return <Station
             name={station.name}
@@ -33,7 +34,6 @@ class App extends React.Component {
             color={station.color}
             liveaudioUrl={station.liveaudio.url} />
         })
-
       )
     } else {
       return <div>Loading...</div>

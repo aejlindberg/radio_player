@@ -8,31 +8,46 @@ h1 {
   color: #fff;
   margin: 10px;
   padding-right: 10px;
-  text-align: right;
+  text-align: center;
 }
 
 p {
   font-size: 10px;
+  color: #fff;
+}
+
+.stationWrapper {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .station {
-  width: 500px;
-  height: 200px;
-  margin: 10px 0;
-  display: flex;
-}
-
-.station img {
-  height: 200px;
-  width: 200px;
-  object-fit: cover;
-}
-
-.stationText {
-  margin-left: 10px;
+  width: 400px;
+  margin-bottom: 20px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
 }
 
+.stationImage img {
+  width: 100%;
+}
+
+.stationText {
+}
+
 .stationTagline {
+  padding:10px;
+}
+
+.stationAudio {
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
 }
