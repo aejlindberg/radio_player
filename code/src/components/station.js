@@ -16,7 +16,7 @@ class Station extends React.Component {
             <img src={this.props.image} alt="station logo" />
           </div>
           <div className="stationText">
-            <h1>{this.props.name}</h1>
+            <h2>{this.props.name}</h2>
           </div>
           <div className="stationTagline">
             <p>{this.props.tagline}</p>
