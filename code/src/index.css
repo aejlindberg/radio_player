@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 20px;
   padding: 0;
   font-family: sans-serif;
 }
@@ -16,17 +16,15 @@ p {
   color: #fff;
 }
 
-.stationWrapper {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+.App {
   display: flex;
   flex-flow: row wrap;
 }
 
 .station {
-  width: 400px;
-  margin-bottom: 20px;
+  width: 300px;
+  height: 500px;
+  margin: 20px;
   padding-bottom: 40px;
   display: flex;
   flex-direction: column;
@@ -36,9 +34,6 @@ p {
   width: 100%;
 }
 
-.stationText {
-}
-
 .stationTagline {
   padding:10px;
 }
@@ -46,8 +41,4 @@ p {
 .stationAudio {
   margin-left: auto;
   margin-right: auto;
-}
-.wrapper {
-  display: flex;
-  flex-flow: row wrap;
 }

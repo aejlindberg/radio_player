@@ -24,16 +24,19 @@ class App extends React.Component {
   render() {
     if (this.state.radioItems.length > 0) {
       return (
-        // .filter
-
-        this.state.radioItems.map((station) => {
-          return <Station
-            name={station.name}
-            image={station.image}
-            tagline={station.tagline}
-            color={station.color}
-            liveaudioUrl={station.liveaudio.url} />
-        })
+        <div className="App">
+          {this.state.radioItems.map((station) => {
+            return (
+              <Station
+                key={station.id}
+                name={station.name}
+                image={station.image}
+                tagline={station.tagline}
+                color={station.color}
+                liveaudioUrl={station.liveaudio.url} />
+            )
+          })}
+        </div>
       )
     } else {
       return <div>Loading...</div>
