@@ -26,8 +26,8 @@ class App extends React.Component {
       return (
         <div className="App">
           <div className="header">
-            <img id="SR" src="/SR.svg" alt="Sveriges Radio" />
-            <img id="radio" src="/radio.svg" alt="radio icon" />
+            <img id="SR" src="./SR.svg" alt="Sveriges Radio" />
+            <img id="radio" src="./radio.svg" alt="radio icon" />
           </div>
           {this.state.radioItems.map((station) => {
             return (
