@@ -40,7 +40,7 @@ p {
 }
 
 #SR {
-  margin-right: 50px;
+  padding-right: 50px;
 }
 
 #radio {
@@ -73,4 +73,17 @@ p {
   margin-right: auto;
   position: absolute;
   bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #SR {
+    padding-right: 0;
+  }
 }
