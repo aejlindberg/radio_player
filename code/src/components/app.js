@@ -25,6 +25,9 @@ class App extends React.Component {
     if (this.state.radioItems.length > 0) {
       return (
         <div className="App">
+          <div className="backgroundImage">
+            <img src="/background.jpg" alt="" />
+          </div>
           <div className="header">
             <img id="SR" src="./SR.svg" alt="Sveriges Radio" />
             <img id="radio" src="./radio.svg" alt="radio icon" />
