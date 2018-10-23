@@ -1,8 +1,8 @@
 body {
   /* background-color: #f783e3; */
+  font-family: "Raleway", sans-serif;
   margin: 0;
   padding: 0;
-  font-family: "Raleway", sans-serif;
 }
 
 h1 {
@@ -31,6 +31,7 @@ p {
 }
 
 .backgroundImage {
+  background-size: cover;
   object-position: center;
   object-fit: cover;
   position: fixed;

@@ -26,11 +26,11 @@ class App extends React.Component {
       return (
         <div className="App">
           <div className="backgroundImage">
-            <img src="/background.jpg" alt="" />
+            <img src="/background.jpg" alt="confetti" />
           </div>
           <div className="header">
-            <img id="SR" src="./SR.svg" alt="Sveriges Radio" />
-            <img id="radio" src="./radio.svg" alt="radio icon" />
+            <img id="SR" src="./SR.svg" alt="" />
+            <img id="radio" src="./radio.svg" alt="" />
           </div>
           {this.state.radioItems.map((station) => {
             return (
