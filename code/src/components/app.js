@@ -27,7 +27,7 @@ class App extends React.Component {
         <div className="App">
           <div className="wrapper">
             <div className="backgroundImage">
-              <img src="/background.jpg" alt="confetti" />
+              <img src="./background.jpg" alt="confetti" />
             </div>
             <div className="header">
               <img id="SR" src="./SR.svg" alt="" />
